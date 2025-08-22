@@ -34,6 +34,8 @@
 .introPara {
     font-size: medium;
     font-weight: 300;
+    width: 100vw;
+    max-width: 36rem;
 }
 
 .bg {
