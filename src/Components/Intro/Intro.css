@@ -45,6 +45,7 @@
     right: 0;
     height: 100vh;
     z-index: -1;
+    /* border: 2px solid white; */
     /* margin-top: rem; */
     /* margin-right: -2rem; */
 }
@@ -71,21 +72,21 @@
 }
 
 @media screen and (max-width:840px) {
-    .bg {
-        right: -10vw;
-    }
-
     .introContent {
-        font-size: 10vw;
+        font-size: 9vw;
     }
 
     .hello {
-        font-size: 4.5vw;
+        font-size: 4vw;
+    }
+
+    .introPara{
+        font-size: 3.5vw;
     }
 }
 
 @media screen and (max-width:480px) {
     .bg {
-        right: -20vw;
+        right: -10vw;
     }
 }
