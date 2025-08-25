@@ -1,6 +1,6 @@
-.navbar{
+#navbar{
     height: 4rem;
-    width: 100vw;
+    width: 100%;
     max-width: 75rem;
     margin: 0 auto;
     padding: 1rem 2rem;
@@ -23,6 +23,7 @@
     margin: 1rem;
     cursor: pointer;
     user-select: none;
+    color: white;
 }
 
 .desktopMenuListItem:hover{
@@ -49,4 +50,8 @@
     height: 1rem;
     width: 1rem;
     margin: 1rem;
+}
+
+.active{
+    color: yellow;
 }

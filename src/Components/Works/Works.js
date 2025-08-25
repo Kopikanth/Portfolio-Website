@@ -9,7 +9,7 @@ import pic6 from '../../assets/portfolio-6.png';
 const Works = () => {
 
     return (
-        <section className="works">
+        <section id="works">
             <span className="worksTitle">My portfolio</span>
             <p className="worksDescription">I take pride in paying attention to the smallest deatils and making sure that my work is pixel perfect. I am excited to bring my skills and experience to help businesses achieve their goals and create a strong online presence.</p>
             <div className="imageSection">

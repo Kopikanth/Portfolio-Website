@@ -1,12 +1,11 @@
-.skills{
-    /* height: 100vh; */
-    width: 100vw;
+#skills{
+    width: 100%;
     max-width: 75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem auto;
-    padding: 2rem;
+    margin: 0rem auto;
+    margin-top: 5rem;
 }
 
 .skillsTitle{
@@ -19,7 +18,7 @@
     font-weight: 100;
     margin-top: 1.3rem;
     margin-bottom: 5rem;
-    width: 100vw;
+    width: 100%;
     max-width: 55rem;
 }
 

@@ -6,18 +6,18 @@ import contactImg from "../../assets/contact.png";
 
 const NavBar = () => {
   return (
-    <nav className="navbar">
+    <nav id="navbar">
       <img src={logo} alt="logo" className="logo" />
       <div className="desktopMenu">
-        <Link className="desktopMenuListItem">Home</Link>
-        <Link className="desktopMenuListItem">About</Link>
-        <Link className="desktopMenuListItem">Portfolio</Link>
-        <Link className="desktopMenuListItem">Clients</Link>
+        <Link activeClass="active" spy={true} className="desktopMenuListItem" to="intro" duration={500} smooth={true} offset={-100}>Home</Link>
+        <Link activeClass="active" spy={true} className="desktopMenuListItem" to="skills" duration={500} smooth={true} offset={-100}>About</Link>
+        <Link activeClass="active" spy={true} className="desktopMenuListItem" to="works" duration={500} smooth={true} offset={-100}>Portfolio</Link>
+        <Link activeClass="active" spy={true} className="desktopMenuListItem" to="clientsInfo" duration={500} smooth={true} offset={-100}>Clients</Link>
       </div>
-      <button className="desktopMenuBtn">
+      <Link to="contactTitle" className="desktopMenuBtn" smooth='true' duration={500} offset={-100}>
         <img src={contactImg} alt="contact image" className="desktopMenuImg" />
-        Contact me
-      </button>
+          Contact me
+      </Link>
     </nav>
   )
 }

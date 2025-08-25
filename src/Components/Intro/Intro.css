@@ -1,19 +1,15 @@
-.intro {
-    /* display: flex; */
+#intro {
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     margin: 0 auto;
-    /* margin-top: 2rem; */
-    /* padding: 1rem 2rem; */
+    display: flex;
     position: relative;
 }
 
 .introContent {
-    height: calc(100vh - 4rem);
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +30,7 @@
 .introPara {
     font-size: medium;
     font-weight: 300;
-    width: 100vw;
+    width: 100%;
     max-width: 36rem;
 }
 
@@ -45,16 +41,12 @@
     right: 0;
     height: 100vh;
     z-index: -1;
-    /* border: 2px solid white; */
-    /* margin-top: rem; */
-    /* margin-right: -2rem; */
 }
 
 .btn {
     background: white;
     cursor: pointer;
     padding: 1.3rem 2.1rem;
-    /* height: 4rem; */
     width: 10rem;
     border: none;
     outline: none;
@@ -85,8 +77,9 @@
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:520px) {
     .bg {
-        right: -10vw;
+        object-position: left;
+        width: 100%;
     }
 }

@@ -11,21 +11,25 @@ import instagram from '../../assets/instagram.png';
 const Contact = () => {
 
   return (
-    <section className="contact">
-        <span className="clientsTitle">My clients</span>
-        <p className="clientsText">I have had a opportunity to work with a diverse group of companies. Some of the companies I have worked with include.</p>
-        <div className="companies">
-            <img src={walmart} alt="walmart" className="companyLogo" />
-            <img src={adobe} alt="" className="companyLogo" />
-            <img src={microsoft} alt="" className="companyLogo" />
-            <img src={facebook} alt="" className="companyLogo" />
+    <section id="contact">
+        <div id="clientsInfo">
+            <span className="clientsTitle">My clients</span>
+            <p className="clientsText">I have had a opportunity to work with a diverse group of companies. Some of the notable companies I have worked with include.</p>
+            <div className="companies">
+                <img src={walmart} alt="walmart" className="companyLogo" />
+                <img src={adobe} alt="" className="companyLogo" />
+                <img src={microsoft} alt="" className="companyLogo" />
+                <img src={facebook} alt="" className="companyLogo" />
+            </div>
         </div>
-        <span className="contactTitle">Contact Me</span>
+        <span id="contactTitle">Contact Me</span>
         <p className="contactText">Please fill out the form below to discuss any work opportunities.</p>
-        <input placeholder='Your name' type="text" className="contactName" />
-        <input placeholder='Your Email' type="text" className="contactEmail" />
-        <textarea placeholder='Your Message' className="contactMessage"></textarea>
-        <button className="contactSubmit">Submit</button>
+        <form action="" className="contactForm">
+            <input placeholder='Your Name' type="text" className="contactDetail" />
+            <input placeholder='Your Email' type="email" className="contactDetail" />
+            <textarea placeholder='Your Message' className="contactMessage"></textarea>
+            <button className="contactSubmit" type='submit'>Submit</button>
+        </form>
         <div className="socialMedias">
             <img src={facebookIcon} alt="facebook-icon" className="mediaLogo" />
             <img src={twitter} alt="twitter" className="mediaLogo" />
